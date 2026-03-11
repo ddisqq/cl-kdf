@@ -1,0 +1,10 @@
+cl-kdf
+Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
+
+This product includes cryptographic software implementing:
+- SHA-256 and SHA-512 (FIPS 180-4)
+- HMAC (RFC 2104, FIPS 198-1)
+- PBKDF2 (RFC 2898, NIST SP 800-132)
+- scrypt (RFC 7914)
+
+Originally extracted from the CLPIC (Common Lisp P2P Intellectual Property Chain) project.

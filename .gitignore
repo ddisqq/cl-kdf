@@ -1,0 +1,44 @@
+# ASDF/Quicklisp cache
+*.fasl
+*.fas
+*.lib
+*.x86f
+*.sparcf
+*.sparc64f
+*.hpf
+*.hp64f
+*.ppcf
+*.nfasl
+*.ufsl
+*.fsl
+*.lx64fsl
+*.lx32fsl
+*.dx64fsl
+*.dx32fsl
+*.wx64fsl
+*.wx32fsl
+
+# SBCL specific
+*.core
+
+# Editor backups
+*~
+\#*\#
+.\#*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+build/
+dist/
+
+# Local configuration
+local.lisp
