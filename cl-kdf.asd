@@ -26,4 +26,6 @@
                 :serial t
                 :components ((:file "tests"))))
   :perform (test-op (o s)
-             (uiop:symbol-call :cl-kdf.test :run-tests)))
+             (let ((result (uiop:symbol-call :cl-kdf.test :run-tests)))
+               (unless result
+                 (error "Tests failed")))))
