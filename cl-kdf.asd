@@ -11,12 +11,10 @@
   :serial t
   :components ((:file "package")
                (:module "src"
-                :serial t
-                :components ((:file "util")
-                             (:file "sha256")
-                             (:file "hmac")
-                             (:file "pbkdf2")
-                             (:file "scrypt"))))
+                :components ((:file "package")
+                             (:file "conditions" :depends-on ("package"))
+                             (:file "types" :depends-on ("package"))
+                             (:file "cl-kdf" :depends-on ("package" "conditions" "types"))))))
   :in-order-to ((asdf:test-op (test-op "cl-kdf/test"))))
 
 (asdf:defsystem #:"cl-kdf/test"
