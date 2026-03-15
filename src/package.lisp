@@ -12,6 +12,8 @@ Implements:
 Thread Safety: Yes (all functions are pure, no shared state)
 Performance: SHA-256 is ~1 MB/s, scrypt is intentionally slow")
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -46,6 +48,8 @@ Performance: SHA-256 is ~1 MB/s, scrypt is intentionally slow")
 (defpackage #:cl-kdf.test
   (:use #:cl #:cl-kdf)
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
