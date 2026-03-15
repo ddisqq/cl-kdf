@@ -4,7 +4,7 @@
 (asdf:defsystem #:"cl-kdf"
   :version "0.1.0"
   :author "Parkian Company LLC"
-  :license "BSD-3-Clause"
+  :license "Apache-2.0"
   :description "PBKDF2 and scrypt key derivation functions in pure Common Lisp"
   :homepage "https://github.com/parkian/cl-kdf"
   :depends-on ()
